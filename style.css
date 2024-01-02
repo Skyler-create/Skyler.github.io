@@ -75,6 +75,11 @@ nav a {
     margin-bottom: 1em;
 }
 
+.hero-section h3 {
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
 .social-links {
     font-size: 2em; /* Larger icons */
     margin-bottom: 1em;
@@ -84,6 +89,13 @@ nav a {
     color: #CAF0F8; /* Light color for icons */
     margin: 0 10px;
     transition: color 0.3s ease;
+    position: left;
+    right: 30px;
+}
+
+.social-links h3 {
+    font-size: 0.3em;
+    margin-bottom: 0;
 }
 
 .social-links a:hover {
@@ -96,42 +108,6 @@ nav a {
 }
 
 
-.hero-section {
-    text-align: center;
-    padding: 50px 0;
-    color: #00B4D8; /* Adjust the color to match the image */
-}
-
-.hero-section h1 {
-    font-size: 3em; /* Large font size for the main heading */
-    margin-bottom: 0.5em;
-}
-
-.hero-section h2 {
-    font-size: 2em; /* Slightly smaller font size for the subheading */
-    color: #CAF0F8; /* Lighter color for contrast */
-    margin-bottom: 1em;
-}
-
-.social-links {
-    font-size: 2em; /* Larger icons */
-    margin-bottom: 1em;
-}
-
-.social-links a {
-    color: #CAF0F8; /* Light color for icons */
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: #00B4D8; /* Darker color on hover */
-}
-
-.tagline {
-    font-size: 1.5em;
-    color: #90E0EF; /* Slightly different color for emphasis */
-}
 /* Skill container holds the skill name, bar, and percentage */
 .skill-container {
     background-color: #34495e; /* Darker background for the container */
@@ -140,5 +116,79 @@ nav a {
     margin-bottom: 15px; /* Adjusted for space between skill bars */
     overflow: hidden; /* Ensures that contained floats are considered for the container's size */
     width: 100%; /* Full width */
+}
+
+
+/* Add this to your CSS file */
+.footer {
+    background-color: #1c1e29;
+    color: white;
+    padding: 16px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-right {
+    float: right;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+/* Include the previous modal CSS here */
+
+/* Add this CSS to your existing stylesheet */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 

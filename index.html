@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <div class="hero-section">
-        <h1>Hello, I am Skyler Lang</h1>
+        <h1>Skyler Lang, at your service</h1>
         <h2>Computer Engineer</h2>
         <div class="social-links">
             <a href="https://github.com/Skyler-create" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -54,3 +54,70 @@
     </script>
 </body>
 </html>
+
+
+
+<!-- Add this to your HTML file -->
+<footer class="footer">
+<div class="footer-content">
+
+
+    <div class="footer-left">
+        <!-- Add an id to your email link to target it with JavaScript -->
+        <a href="#" id="emailPopup">Email</a>
+        <a href="YOUR_RESUME_LINK" target="_blank">Resume</a>
+        <a href="https://www.linkedin.com/in/skyler-lang/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/skyler0117_/" target="_blank">Instagram</a>
+    </div>
+
+    
+    <div class="footer-right">
+        Updated January 2024 | Made using HTML/CSS/JS
+    </div>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>You can reach me via email at skyler.scooty@gmail.com</p>
+    </div>
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("emailPopup");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+// When the user clicks the button, update the modal content and display the modal
+btn.onclick = function() {
+    document.getElementById("emailAddress").textContent = "new.email@example.com"; // Change the email dynamically if needed
+    modal.style.display = "block";
+}
+
+</script>
