@@ -13,12 +13,44 @@ header {
     text-align: center;
     font-size: 1.2em;
 }
-nav {
-    display: flex;
-    justify-content: center;
-    background-color: #262b3d;
+/* In your CSS file */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* High z-index to ensure the navbar is above other elements */
+    background-color: #2c3e50; /* Example background color, similar to the navbar in your image */
     padding: 10px 0;
-}
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Add responsiveness */
+  @media screen and (max-width: 600px) {
+    .navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+  
+  /* Clear floats */
+  .navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 nav a {
     color: #fff;
     text-decoration: none;
