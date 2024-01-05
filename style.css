@@ -6,6 +6,7 @@ body {
     background-color: #1c1e29;
     color: #fff;
 }
+
 header {
     background-color: #121417;
     padding: 10px 0;
@@ -60,7 +61,7 @@ nav a {
 
 .hero-section {
     text-align: center;
-    padding: 50px 0;
+    padding-right: 210px;
     color: #00B4D8; /* Adjust the color to match the image */
 }
 
@@ -135,6 +136,10 @@ li {
     color: white;
     padding: 16px 0;
     font-size: 14px;
+    margin: 0;
+    min-height: 70vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 .footer-content {
@@ -231,6 +236,7 @@ h2 {
     padding-left: 400px; /* Adjust padding as needed */
     font-size: 40px;
 }
+
 
 .social-link {
     display: flex;
