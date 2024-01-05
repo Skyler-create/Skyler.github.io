@@ -6,7 +6,7 @@
 
 <!-- Your navbar HTML -->
 <div class="navbar">
-  <a href="#home">Home</a>
+  <a href="index.html">Home</a>
   <a href="skills.html">What I Do</a>
   <a href="#experience">Experience</a>
   <a href="#projects">Projects</a>
@@ -24,34 +24,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <div class="hero-section">
-        <h1>Skyler Lang, at your service</h1>
-        <h4>Hello World! Welcome to my little corner of the internet, where I explore </h4>
-        <div class="social-links">
-            <a href="https://github.com/Skyler-create" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/skyler-lang/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="mailto:skyler.scooty@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-            <a href="https://www.instagram.com/skyler0117_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-            <!-- Add more social links as needed -->
+    <div class="skills-container">
+        <div class="left-skills">
+            <h2>I am a:</h2>
+            <ul>
+                <li>Computer Engineer</li>
+                <li>Web Developer</li>
+                <li>Writer</li>
+                <li>Copywriter</li>
+            </ul>
         </div>
-        <p class="tagline">A passionate Computer Engineer | Software Developer | Writer</p>
+        <div class="right-skills">
+            <h2>I am proficient in:</h2>
+            <ul>
+                <li>Java, Python, C</li>
+                <li>HTML, CSS, Javascript</li>
+                <li>English and Chinese</li>
+                <li>Generating more Clicks</li>
+            </ul>
+        </div>
     </div>
     
-
-    <script>
-        // JavaScript to fill the skill bars to the specified percentage
-        window.onload = function() {
-            var skillBars = document.querySelectorAll('.skill-bar');
-            skillBars.forEach(function(bar) {
-                var percentage = bar.getAttribute('data-percentage');
-                bar.style.width = percentage + '%';
-            });
-        };
-    </script>
-</body>
 </html>
 
 

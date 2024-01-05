@@ -80,11 +80,6 @@ nav a {
     margin-bottom: 0;
 }
 
-.social-links {
-    font-size: 2em; /* Larger icons */
-    margin-bottom: 1em;
-}
-
 .social-links a {
     color: #CAF0F8; /* Light color for icons */
     margin: 0 10px;
@@ -109,14 +104,29 @@ nav a {
 
 
 /* Skill container holds the skill name, bar, and percentage */
-.skill-container {
-    background-color: #34495e; /* Darker background for the container */
-    border-radius: 10px;
-    padding: 5px;
-    margin-bottom: 15px; /* Adjusted for space between skill bars */
-    overflow: hidden; /* Ensures that contained floats are considered for the container's size */
-    width: 100%; /* Full width */
+.skills-container {
+    display: flex; /* This creates a flexbox container */
+    justify-content: space-between; /* This spaces out the child elements */
+    padding-left: 75px; /* Optional: Add padding for some space inside the container */
 }
+
+.left-skills, .right-skills {
+    width: 50%; /* Each child takes up half the width of the container */
+}
+
+ul {
+    list-style: none; /* This removes the default list styling */
+    padding-left: 10px; /* This removes the default padding */
+    padding-top: 0;
+}
+
+li {
+    padding: 5px; /* Optional: Add padding for spacing between list items */
+    font-size: 30px;
+}
+
+/* You may want to add additional styling to match your design */
+
 
 
 /* Add this to your CSS file */
@@ -192,3 +202,50 @@ nav a {
     cursor: pointer;
 }
 
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column-left, .column-right {
+    width: 100%;
+}
+
+.tagline {
+    margin: 0; /* Removes the default paragraph margins */
+}
+
+/* Optional: If you want to vertically align the headers with the taglines */
+h2 {
+    margin-bottom: 0; /* Aligns the header with the first tagline */
+    padding-bottom: 0; /* Adjust as needed */
+    font-size: 50px;
+    padding-top: 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: flex-start; /* Align children to the start (left) of the container */
+    padding-left: 400px; /* Adjust padding as needed */
+    font-size: 40px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center; /* Align the icon and text vertically */
+    margin-bottom: 10px; /* Space between the links */
+    color: #ffffff; /* Adjust the color as needed */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.social-link i {
+    margin-right: 8px; /* Space between the icon and text */
+    /* If you need to size the icons */
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.social-link span {
+    /* If you want to style the text */
+}
